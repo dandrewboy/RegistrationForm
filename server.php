@@ -1,4 +1,11 @@
 <?php
+
+$hostname = "wftuqljwesiffol6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"	
+$username = "gk4nhycoj7ikfsf8"	
+$password = "krvk3p8l77jtppoy"	
+$port = 3306	
+$database = "jv4xgk33vu849apd"
+
 $hostname = "localhost:8889";
 $username = "root";
 $password = "root";
