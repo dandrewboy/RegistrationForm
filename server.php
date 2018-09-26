@@ -6,10 +6,10 @@ $password = "krvk3p8l77jtppoy"
 $port = 3306	
 $database = "jv4xgk33vu849apd"
 
-$hostname = "localhost:8889";
-$username = "root";
-$password = "root";
-$database = "heroku";
+//$hostname = "localhost:8889";
+//$username = "root";
+//$password = "root";
+//$database = "heroku";
 
 //Create connection to localhost
 $conn = mysqli_connect($hostname, $username, $password, $database);
