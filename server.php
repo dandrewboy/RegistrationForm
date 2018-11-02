@@ -12,20 +12,20 @@ $db = mysqli_connect('wftuqljwesiffol6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
     // receive all input values from the form
-    $FirstName = mysqli_real_escape_string($db, $_POST['FirstName']);
-    $LastName = mysqli_real_escape_string($db, $_POST['LastName']);
+    $firstName = mysqli_real_escape_string($db, $_POST['FirstName']);
+    $lastName = mysqli_real_escape_string($db, $_POST['LastName']);
     $username = mysqli_real_escape_string($db, $_POST['username']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
     $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
-    $DateofBirth = mysqli_real_escape_string($db, $_POST['DateofBirth']);
+    $dateOfBirth = mysqli_real_escape_string($db, $_POST['DateofBirth']);
 
     // form validation: ensure that the form is correctly filled ...
     // by adding (array_push()) corresponding error unto $errors array
-    if (empty($FirstName)) {
+    if (empty($firstName)) {
         array_push($errors, "First Name is required");
     }
-    if (empty($LastName)) {
+    if (empty($lastName)) {
         array_push($errors, "Last Name is required");
     }
     if (empty($username)) {
@@ -37,7 +37,7 @@ if (isset($_POST['reg_user'])) {
     if (empty($password_1)) {
         array_push($errors, "Password is required");
     }
-    if (empty($DateofBirth)) {
+    if (empty($dateOfBirth)) {
         array_push($errors, "Date of Birth is required");
     }
     if ($password_1 != $password_2) {
